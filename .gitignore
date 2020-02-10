@@ -3,6 +3,6 @@ a.out
 settings.json
 *.o
 build/*
-build
+docs/*
 *.json
 *.make
