@@ -29,7 +29,7 @@ class ChatBotPanelDialog : public wxScrolledWindow {
 
   // getter / setter
   // returns raw pointers to ChatLogic object in the heap
-  ChatLogic *GetChatLogicHandle() { return _chatLogic.get(); }
+  std::unique_ptr<ChatLogic>& GetChatLogicHandle() { return _chatLogic; }
 
   // events
   void paintEvent(wxPaintEvent &evt);
