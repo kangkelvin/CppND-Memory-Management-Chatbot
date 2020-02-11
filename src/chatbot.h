@@ -29,6 +29,10 @@ class ChatBot {
   //// STUDENT CODE
   ////
 
+  ChatBot &operator=(const ChatBot &source);
+  ChatBot(ChatBot &&source);
+  ChatBot &operator=(ChatBot &&source);
+
   ////
   //// EOF STUDENT CODE
 
