@@ -3,6 +3,8 @@ a.out
 settings.json
 *.o
 build/*
-docs/*
+*.zip
+*.mp4
 *.json
 *.make
+.vscode/settings.json
