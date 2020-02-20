@@ -43,6 +43,21 @@
       "iterator": "cpp",
       "memory_resource": "cpp",
       "random": "cpp",
-      "string": "cpp"
+      "string": "cpp",
+      "strstream": "cpp",
+      "bitset": "cpp",
+      "chrono": "cpp",
+      "complex": "cpp",
+      "cstring": "cpp",
+      "optional": "cpp",
+      "ratio": "cpp",
+      "string_view": "cpp",
+      "iomanip": "cpp",
+      "thread": "cpp",
+      "cfenv": "cpp",
+      "cinttypes": "cpp",
+      "typeindex": "cpp",
+      "map": "cpp",
+      "set": "cpp"
     }
 }
