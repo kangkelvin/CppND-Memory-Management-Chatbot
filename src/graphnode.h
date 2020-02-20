@@ -1,9 +1,9 @@
 #ifndef GRAPHNODE_H_
 #define GRAPHNODE_H_
 
+#include <memory>
 #include <string>
 #include <vector>
-#include <memory>
 #include "chatbot.h"
 
 // forward declarations
@@ -15,7 +15,8 @@ class GraphNode {
   ////
 
   // data handles (owned)
-  std::vector<std::unique_ptr<GraphEdge>> _childEdges;  // edges to subsequent nodes
+  std::vector<std::unique_ptr<GraphEdge>>
+      _childEdges;  // edges to subsequent nodes
 
   // data handles (not owned)
   std::vector<GraphEdge *> _parentEdges;  // edges to preceding nodes
@@ -48,7 +49,7 @@ class GraphNode {
   //// STUDENT CODE
   ////
 
-  void MoveChatbotHere(ChatBot& chatbot);
+  void MoveChatbotHere(ChatBot &chatbot);
 
   ////
   //// EOF STUDENT CODE

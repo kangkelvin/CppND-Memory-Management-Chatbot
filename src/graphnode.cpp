@@ -22,7 +22,7 @@ void GraphNode::AddEdgeToChildNode(std::unique_ptr<GraphEdge> edge) {
 void GraphNode::MoveChatbotHere(ChatBot &chatBot) {
   std::cout << std::endl;
   ChatBot chatBotStack("../images/chatbot.png");
-  ChatBot* chatBotHeap = new ChatBot(std::move(chatBot));
+  ChatBot *chatBotHeap = new ChatBot(std::move(chatBot));
   _chatBot = std::move(*chatBotHeap);
   delete chatBotHeap;
   _chatBot.SetCurrentNode(this);

@@ -188,10 +188,10 @@ ChatBotPanelDialogItem::ChatBotPanelDialogItem(wxPanel *parent, wxString text,
                                                bool isFromUser)
     : wxPanel(parent, -1, wxPoint(-1, -1), wxSize(-1, -1), wxBORDER_NONE) {
   // retrieve image from chatbot
-  wxBitmap *bitmap = isFromUser == true ? nullptr
-                                        : ((ChatBotPanelDialog *)parent)
-                                              ->GetChatLogicHandle()
-                                              ->GetImageFromChatbot();
+  wxBitmap *bitmap =
+      isFromUser == true ? nullptr : ((ChatBotPanelDialog *)parent)
+                                         ->GetChatLogicHandle()
+                                         ->GetImageFromChatbot();
 
   // create image and text
   _chatBotImg = new wxStaticBitmap(
