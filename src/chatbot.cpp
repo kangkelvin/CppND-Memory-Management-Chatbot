@@ -36,6 +36,15 @@ ChatBot::~ChatBot() {
 //// STUDENT CODE
 ////
 
+ChatBot::ChatBot(const ChatBot &source) {
+  std::cout << "ChatBot Copy Constructor at " << this << std::endl;
+
+  _image = source._image;
+  _currentNode = source._currentNode;
+  _chatLogic = source._chatLogic;
+  _rootNode = source._rootNode;
+}
+
 ChatBot &ChatBot::operator=(const ChatBot &source) {
   std::cout << "ChatBot copy assignment operator at " << this << std::endl;
 
