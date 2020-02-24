@@ -6,6 +6,7 @@
 #include <sstream>
 #include <tuple>
 #include <vector>
+#include <memory>
 
 #include "chatbot.h"
 #include "chatlogic.h"
@@ -194,7 +195,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename) {
   ChatBot chatBot("../images/chatbot.png");
   chatBot.SetChatLogicHandle(this);
   chatBot.SetRootNode(rootNode);
-  rootNode->MoveChatbotHere(chatBot);
+  rootNode->MoveChatbotHere(std::move(chatBot));
 
   ////
   //// EOF STUDENT CODE
